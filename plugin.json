@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "architecture-review",
+  "version": "1.0.0",
+  "description": "Independent architecture review for concrete technical designs before implementation.",
+  "author": {
+    "name": "Mahan Manouchehri"
+  },
+  "repository": "https://github.com/MahanManouchehri/architecture-review",
+  "license": "MIT",
+  "keywords": ["architecture", "design-review", "engineering", "planning"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Architecture Review",
+        "shortDescription": "Review concrete designs before implementation.",
+        "longDescription": "Reviews an existing technical design for structural risks, project fit, safety, simplicity, and changeability without modifying it.",
+        "developerName": "Mahan Manouchehri",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Review this concrete technical design before implementation."
+        ]
+      }
+    }
+  }
+}
